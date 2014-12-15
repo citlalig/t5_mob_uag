@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.citlalig.t5_mob_uag.AddCompany">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/company_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="Company" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/line_bus_txt"
+        android:hint="Line of Business"
+        android:layout_below="@+id/company_txt"
+        android:layout_alignStart="@+id/company_txt"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/company"
+        android:layout_below="@+id/line_bus_txt"
+        android:layout_alignStart="@+id/line_bus_txt" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/add_btn"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="addCompany"
+        android:nestedScrollingEnabled="false" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/counter_txt"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/company_txt"
+        android:hint="1"
+        android:layout_alignParentBottom="false"
+        android:autoText="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_centerInParent="true" />
+</RelativeLayout>
